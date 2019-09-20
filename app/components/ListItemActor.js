@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-import {Text, ScrollView, View, Image, StyleSheet} from 'react-native';
+import {Text, View, Image, StyleSheet} from 'react-native';
 
 import Colors from '../styles/colors';
 import FontSizes from '../styles/fontSizes';

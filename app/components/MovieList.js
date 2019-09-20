@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {movies, actors} from '../data';
 import MainHeader from './MainHeader';
 import ListItem from './ListItem';
-import {View} from 'react-native';
+import {View, FlatList} from 'react-native';
 
 export default class MovieList extends Component {
   constructor(props) {
@@ -16,10 +16,9 @@ export default class MovieList extends Component {
     return (
       <View>
         <MainHeader />
-        {/*
-            Exercise: map over this item
-            <ListItem key={} name={movie.name} image={movie.image}/>
-            */}
+        {this.state.movies.map(movie => (
+          <ListItem key={movie.name} name={movie.name} image={movie.image} />
+        ))}
       </View>
     );
   }
