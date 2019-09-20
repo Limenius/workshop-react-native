@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* travolta2019Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* travolta2019Tests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
@@ -20,6 +19,8 @@
 		35125023103563A49CFAD902 /* libPods-travolta2019-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5F2B46E45A65B88A0FF74F /* libPods-travolta2019-tvOS.a */; };
 		73EB0D2897A29980B203109C /* libPods-travolta2019.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B7305CA5ECF87A4F51E165 /* libPods-travolta2019.a */; };
 		DD1AC095A602874FC02699D4 /* libPods-travolta2019-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC170F60C89D17D4A55FE9E /* libPods-travolta2019-tvOSTests.a */; };
+		CB4140AECCCA4BF2AE27068B /* OleoScript-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D2A2D82E9634A0D82F33E12 /* OleoScript-Bold.ttf */; };
+		D7CE6A8B8D4A49569951F30F /* OleoScript-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A68BF96723344937ACAF74DC /* OleoScript-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,8 @@
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F43BD5927E08ABA8ECE7C3E7 /* Pods-travolta2019.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-travolta2019.release.xcconfig"; path = "Pods/Target Support Files/Pods-travolta2019/Pods-travolta2019.release.xcconfig"; sourceTree = "<group>"; };
+		1D2A2D82E9634A0D82F33E12 /* OleoScript-Bold.ttf */ = {isa = PBXFileReference; name = "OleoScript-Bold.ttf"; path = "../assets/fonts/OleoScript-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A68BF96723344937ACAF74DC /* OleoScript-Regular.ttf */ = {isa = PBXFileReference; name = "OleoScript-Regular.ttf"; path = "../assets/fonts/OleoScript-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +183,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				306EB36CC233E7468F50D28D /* Pods */,
+				610DD728B28E4559A55B7EC7 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -196,6 +200,16 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		610DD728B28E4559A55B7EC7 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				1D2A2D82E9634A0D82F33E12 /* OleoScript-Bold.ttf */,
+				A68BF96723344937ACAF74DC /* OleoScript-Regular.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -284,7 +298,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 940;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -337,6 +351,8 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				CB4140AECCCA4BF2AE27068B /* OleoScript-Bold.ttf in Resources */,
+				D7CE6A8B8D4A49569951F30F /* OleoScript-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

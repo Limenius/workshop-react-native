@@ -33,7 +33,7 @@ const Styles = StyleSheet.create({
   },
   logoTitle: {
     // Uncommenting the next line will throw an error... for now
-    //fontFamily: 'Oleo Script',
+    fontFamily: 'OleoScript-Regular',
 
     fontSize: FontSizes.gigantic,
     color: Colors.background,
