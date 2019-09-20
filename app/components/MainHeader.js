@@ -1,17 +1,19 @@
-import React from "react";
+import React from 'react';
 
-import { Text, View, Image, StyleSheet } from "react-native";
+import {Text, View, Image, StyleSheet} from 'react-native';
 
-import Colors from "../styles/colors";
-import FontSizes from "../styles/fontSizes";
+import Colors from '../styles/colors';
+import FontSizes from '../styles/fontSizes';
 
 const MainHeader = () => (
   <View style={Styles.logo}>
-    <Text style={Styles.logoTitle}>Travolta</Text>
-    <Text style={Styles.logoSubtitle}>Your movie demo app</Text>
+    <View style={Styles.logoText}>
+      <Text style={Styles.logoTitle}>Travolta</Text>
+      <Text style={Styles.logoSubtitle}>Your movie demo app</Text>
+    </View>
     <Image
       style={Styles.logoImage}
-      source={require("../images/john-travolta.png")}
+      source={require('../images/john-travolta.png')}
     />
   </View>
 );
@@ -19,6 +21,15 @@ const MainHeader = () => (
 const Styles = StyleSheet.create({
   logo: {
     backgroundColor: Colors.highlight,
+
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: 18,
+  },
+  logoText: {
+    marginRight: 18,
+    alignItems: 'flex-end',
   },
   logoTitle: {
     // Uncommenting the next line will throw an error... for now
@@ -29,7 +40,7 @@ const Styles = StyleSheet.create({
   },
   logoSubtitle: {
     color: Colors.background,
-    fontWeight: "200",
+    fontWeight: '200',
     fontSize: FontSizes.subhead,
   },
   logoImage: {
